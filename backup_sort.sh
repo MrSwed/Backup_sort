@@ -1,17 +1,24 @@
 #!/bin/bash
+if [ -f $HOME/.bash_profile ]; then
 . $HOME/.bash_profile
+fi
 # Sorting hosting account backups
-# Sergey Davydov <admin@collection.com.ua>
+# Sergey Davydov <admin@sdcollection.com>
 
 # defaults
+# all server backups 
+#root_dir=/backup
 
+# resseler or account backups
 root_dir=~/user_backups
+
 mask=*.tar.gz
 def_sour=$root_dir
+#def_sour=$root_dir/daily
 dest_by_weekday[6]=$root_dir/weekly
 dest_by_monday[1]=$root_dir/monthly
 
-#defaults previou versions, comment var if din't need it
+#defaults previous versions, comment var if din't need it
 #dest_prev_week=$root_dir/weekly2
 #dest_prev_mon=$root_dir/monthly2
 dest_prev_day=$root_dir/daily2
