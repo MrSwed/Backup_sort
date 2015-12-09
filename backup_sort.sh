@@ -4,6 +4,7 @@ if [ -f $HOME/.bash_profile ]; then
 fi
 # Sorting hosting account backups
 # Sergey Davydov <admin@sdcollection.com>
+# https://github.com/useful-tools/Backup_sort
 
 # defaults
 # all server backups 
